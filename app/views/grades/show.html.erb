@@ -1,0 +1,10 @@
+<div class="row" ng-controller="studentControl">
+  <div class="col-md-3" >
+    <%= render :partial=>"grade_form" %>
+  </div>
+
+  <div class="col-md-9">
+    <div flash-message="5000"></div>
+    <%= render :partial=>"grade_list" %>
+  </div>
+</div>

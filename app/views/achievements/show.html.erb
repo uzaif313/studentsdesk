@@ -1,0 +1,17 @@
+<div class="row"  ng-controller="achievementController">
+  <div class="col-md-9">
+        <div flash-message="5000"></div>
+        <%= render :partial => "achivements_list" %>
+    </div>
+
+  <div class="col-md-3">
+    <div class="alert alert-danger" ng-show="errors!=null" >
+      <p ng-repeat="val in errors">
+        {{$index+1}}. {{val}}
+      </p>
+    </div>
+
+      <%= render :partial=>"achivements_form" %>
+    </div>
+
+</div>
